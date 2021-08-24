@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <title>Ejercicio #1</title>
+</head>
+
+<body>
+    <!-- inicio cabecera del programa -->
+    <header id="cabecera">
+        <h1 id="descripcion"></h1>
+    </header>
+    <!-- fin cabecera del programa -->
+    
+    <!-- INICIO barra de navegacion del programa -->
+    <nav id="navBar">
+        <ul>
+            <li><a style="background: rgba(0,0,0,0.7);" href="./ejercicio1.html">Ejercicio #1</a></li>
+            <li><a href="./ejercicio2.html">Ejercicio #2</a></li>
+            <li><a href="./ejercicio3.html">Ejercicio #3</a></li>
+            <li><a href="./ejercicio4.html">Ejercicio #4</a></li>
+            <li><a href="./ejercicio5.html">Ejercicio #5</a></li>
+        </ul>
+    </nav>
+    <!-- FIN barra de navegacion del programa -->
+
+    <!-- inicio del cuerpo del programa -->
+    <div id="contenido">
+        <form action="" id="formulario">
+            <div class="bloque1">
+                <label for="numero1">ingrese el primer numero</label><br>
+                <input type="number" id="numero1"><br>
+            </div>
+            <div class="bloque2">
+                <label for="numero2">ingrese el segundo numero</label><br>
+                <input type="number" id="numero2">
+            </div>
+        </form>
+        <button class="btn-calcular" onclick="calculoTotal()">CALCULAR</button>
+    </div>
+    <div class="resultado">
+        <h2 id="resultado1"></h2>
+        <h2 id="resultado3"></h2>
+        <h2 id="resultado2"></h2>
+    </div>
+    <!-- fin del cuerpo del programa -->
+
+    <!-- <script src="./javascript/main1.js"></script> -->
+    <script src="./javascript/main1.js"></script>
+</body>
+
+</html>
