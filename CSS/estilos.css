@@ -1,0 +1,140 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: var(--fondo-pagina);
+}
+*{
+    margin: 0px;
+}
+:root{
+    --color-titulos: #dddddd;
+    --fondo-cabecera: #4E5166;
+    --fondo-navbar: #7c90a0;
+    --fondo-pagina: #4a6d7c;
+    --fondo-formulario: #b5aa9d;
+    --fondo-resultado: #a9b4c2;
+    --fondo-boton: #a57548;
+    --fondo-letras: #dddddd;
+    --color-resultado: #792a2a;
+}
+
+/* INICIO estilos para la cabecera del programa */
+#cabecera{
+    color: var(--color-titulos);
+    text-align: center;
+    text-shadow: 6px 5px 3px #342d2d;
+    font-family:sans-serif ;
+    font-size: 1em;
+    background: var(--fondo-cabecera);
+}
+/* FIN estilos para la cabecera del programa */
+
+/* INICIO estilos barra de navegacion */
+#navBar{
+    height: px;
+    background: var(--fondo-navbar);
+}
+#navBar ul{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+#navBar li{
+    list-style: none;
+    padding: 0px;
+    border: 1px solid black;
+}
+#navBar li a{
+    text-decoration: none;
+    display: block;
+    margin: 0px;
+    padding: 10px 15px;
+    color: var(--fondo-letras);
+}
+#navBar li a:hover{
+    background: rgba(0,0,0,0.3);
+}
+/* FIN estilos barra de navegacion */
+
+/* INICIO estilos para el cuerpo del programa */
+#contenido{
+    margin-top: 50px;
+    background: none;
+}
+/*INICIO estilos para el formulario */
+#formulario{
+    background: var(--fondo-formulario);
+    display: flex;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+.bloque1, .bloque2, .bloque3{
+    box-sizing: border-box;
+    padding:6%;
+    font-size: 1.4em;
+    margin: auto;
+}
+#numero1, #numero2{
+    width: 100px;
+    height: 30px;
+    color: rgb(16, 31, 36);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--fondo-letras);
+    margin-top: 20px;
+}   
+#numero1:focus, #numero2:focus{
+    background: var(--fondo-formulario);
+    transition: 5s;
+}
+/*FIN estilos para el formulario */
+
+/* INICIO estilos para el boton */
+.botones{
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+.btn-calcular, .btn-reset{
+    display: block;
+    margin: 5px auto;
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: var(--fondo-boton);
+}
+/* FIN estilos para el boton */
+/* INICIO estilos para el resultado */
+.resultado{
+    /* display: block;
+    text-align: center;
+    color: #dddddd;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto; */
+    display: flex;
+    /* background: red; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+}
+.resultado h2{
+    width: 500px;
+    border: 1px solid black;
+    margin: auto 30px;
+    padding: 50px 10px;
+    background-color: var(--fondo-resultado);
+    border-radius: 30px;
+    box-shadow:-6px 7px 0px 0px rgb(24 23 23 / 50%);
+}
+.resultado span{
+    color: var(--color-resultado);
+    font-size: 1.5em;
+}
+/* FIN estilos para el resultado */
+/* FIN estilos para el cuerpo del programa */
